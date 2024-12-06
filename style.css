@@ -145,3 +145,94 @@ body {
         padding: 20px;
     }
 }
+
+
+/* PERGUNTAS FREQUENTES */
+
+h4.perguntas {
+    text-align: center;
+}
+
+/* Estilizando a seção */
+.perguntas {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção */
+.perguntas-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilizando os itens da accordion */
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Cabeçalho dos itens da accordion */
+.accordion-header {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Botão do item da accordion */
+.accordion-button {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #f7f7f7;
+    border: none;
+    text-align: left;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: #e6e6e6;
+}
+
+/* Quando o botão estiver colapsado */
+.accordion-button.collapsed {
+    background-color: #f7f7f7;
+    color: #0056b3;
+}
+
+/* Quando o botão estiver expandido */
+.accordion-button:not(.collapsed) {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Corpo da accordion */
+.accordion-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Destaque para o texto forte dentro da accordion */
+.accordion-body strong {
+    color: #333;
+    font-weight: 700;
+}
+
+
