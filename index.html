@@ -11,6 +11,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <title>CARRO HONESTO CONSULTORIA</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.jpeg" class="icone" borde>
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
 
   <header>
     <div class="text-center">
-      <img src="https://procuremeucarro.com.br/wp-content/uploads/2018/08/xlogo.png.pagespeed.ic.9524iSMR1j.webp">
+      <img src="img/logo.jpeg" width="100px">
     </div>
   </header>
 
@@ -32,35 +33,41 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#quem-somos"> Nosso Trabalho</a>
+              <a class="nav-link" href="#quem-somos"> Quem Somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#nossos-servicos"> Nossos Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Carros Avaliados</a>
+              <a class="nav-link" href="#galeria"> Carros Avaliados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Depoimentos de Clientes</a>
+              <a class="nav-link" href="#depoimentos"> Depoimentos de Clientes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Perguntas Frequentes</a>
+              <a class="nav-link" href="#formulario"> Entre em Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accordionExample"> Perguntas Frequentes</a>
             </li>
   </nav>
 
+
   <!-- Imagem com Botão -->
+
   <div class="text-center md-4" style="position: relative;">
-    <img
-      src="https://img.freepik.com/fotos-gratis/feliz-mecanico-de-automoveis-para-adultos-medios-examinando-o-estoque-de-pneus-na-oficina-de-reparacao-de-automoveis_637285-7534.jpg?t=st=1733436677~exp=1733440277~hmac=7b324e2ad719d2fedf07542dfb59fad971c720a6441d478b8fcce30fee2f23fc&w=1380"
-      class="img-fluid" />
+    <img src="img/perfil.jpeg" class="foto-perfil" width="600px">
     <button type="button" class="btn btn-primary"
       style="--bs-btn-padding-y: .65rem; --bs-btn-padding-x: .95rem; --bs-btn-font-size: .75rem; position: absolute; top: 75%; left: 50%; transform: translateX(-50%)">
       Solicitar Orçamento
     </button>
   </div>
 
+
+  <!-- QUEM SOMOS -->
+
   <section class="mt-5 ms-5 me-5">
-    <div class="position-relative"> </div>
+    <div class="position-relative" id="quemSomos"> </div>
     <div class="position-absolute top-20 start-20" id="quem-somos"></div>
     <h2 class=".bg-primário-sutil"> Quem Somos?</h2>
     <p>Com mais de 14 anos de experiência com carros, a Carro Honesto oferece aos seus clientes um serviço completo de
@@ -72,12 +79,15 @@
     </p>
   </section>
 
+
+  <!-- NOSSOS SERVIÇOS -->
+
   <section class="mt-5 ms-5 me-5">
     <h2 class=".bg-primário-sutil " id="nossos-servicos"> Nossos Serviços</h2>
-    <div class="card mb-3 mt-4 mx-auto p-2" style="max-width: 800px;">
+    <div class="card mb-3 mt-4 mx-auto p-2" style="max-width: 800px;" id="nossosServicos">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="mulher-escolher-car-car-showroom_1303-15187.jpg" class="img-fluid rounded-start" alt="...">
+          <img src="img/servicos1.jpeg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -110,7 +120,7 @@
     <div class="card mb-3 mt-4 mx-auto p-2" style="max-width: 800px;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="auto-mechanic-man-smith-with-clipboard-workshop.jpg" class="img-fluid rounded-start" alt="...">
+          <img src="img/servicos2.jpeg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -137,48 +147,99 @@
 
   <section class="galeria">
     <h4 class="galeria">VEJA ALGUNS DE NOSSOS TRABALHOS</h4>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators" id="galeria">
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+    <div class="container mt-5" id="galeria">
+      <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="img/consultoria1.jpeg" class="d-block w-100" alt="Foto 1">
+            <div class="carousel-caption">
+              <h5>Outlander V6 2016</h5>
+              <p>Localizada para cliente de consultoria localizada em Belo Horizonte. Veículo em excelente estado geral.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao6.jpeg" class="d-block w-100" alt="Foto 2">
+            <div class="carousel-caption">
+              <h5>BMW M135i 2020</h5>
+              <p>Avaliação pré compra para cliente de Niterói RJ. Mais de 400 itens analisados.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/consultoria2.jpeg" class="d-block w-100" alt="Foto 3">
+            <div class="carousel-caption">
+              <h5>Creta Prestige 2019</h5>
+              <p>Localizado para cliente de consultoria em Florianópolis. Veículo em excepcional estado geral e com
+                baixa quilometragem.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao7.jpeg" class="d-block w-100" alt="Foto 4">
+            <div class="carousel-caption">
+              <h5>Grand Cherokee</h5>
+              <p>Após análise técnica minuciosa, descobrimos queo veículo fez uso de GNV e teve manutenção
+                negligenciada. Livramos cliente de uma bomba.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao1.jpeg" class="d-block w-100" alt="Foto 5">
+            <div class="carousel-caption">
+              <h5>A3 sedan Prestige Plus 2019</h5>
+              <p>Avaliação pré compra para cliente de Curitiba. Mais de 400 itens de analisados.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao2.jpeg" class="d-block w-100" alt="Foto 6">
+            <div class="carousel-caption">
+              <h5>Fielder XEI 2007</h5>
+              <p>Após análise técnica visual, com o aparelho identificamos presença de massa no pára-lama dianteiro
+                direito.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao3.jpeg" class="d-block w-100" alt="Foto 7">
+            <div class="carousel-caption">
+              <p>Análise do fluido do arrefecimento com uso de refratômetro.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao4.jpeg" class="d-block w-100" alt="Foto 8">
+            <div class="carousel-caption">
+              <h5>Jetta Highline 2017</h5>
+              <p>Avaliação pré compra para cliente da Bahia. Mais de 400 itens analisados.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="img/avaliacao5.jpeg" class="d-block w-100" alt="Foto 9">
+            <div class="carousel-caption">
+              <h5>Accord V6 2015</h5>
+              <p>Avaliação pré compra para cliente de Belo Horizonte. Mais de 400 itens analisados.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
-      <div class="carousel-inner" data-bs-interval="200">
-        <div class="carousel-item active">
-          <img src="https://i.pinimg.com/originals/4d/48/a8/4d48a89ac4e59d79ef3f8ef38047bf33.jpg" class="d-block w-100"
-            alt="..." width="50">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://th.bing.com/th/id/OIP.Dgp4jP0FR7Mn5BsszhM-vQHaEo?w=800&h=500&rs=1&pid=ImgDetMain"
-            class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://th.bing.com/th/id/OIP.BgHZo4acsLBjMkvenVLP-wHaEy?w=800&h=517&rs=1&pid=ImgDetMain"
-            class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
     </div>
   </section>
 
@@ -186,6 +247,7 @@
   <!-- DEPOIMENTOS -->
 
   <section class="depoimentos" id="depoimentos">
+    <h4 class="depoimentos">DEPOIMENTOS</h4>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-79e2a086-70a1-4894-99cb-2a17ba8986b0" data-elfsight-app-lazy></div>
   </section>
@@ -301,25 +363,28 @@
   <!-- RODAPÉ -->
 
   <footer>
-    <div class="footer-container">
+    <div class="footer-container text-center">
+      <div class="mb-4">
+        <img src="img/logo.jpeg" alt="Logo Carro Honesto Consultoria" class="footer" width="100">
+      </div>
+
       <div class="footer-section">
         <h3>Carro Honesto Consultoria</h3>
         <p>O carro que você precisa com a transparência que você procura.</p>
       </div>
+
       <div class="footer-section">
         <h5>Contatos e Redes Sociais</h5>
-        <ul>
-          <li><a href="https://wa.me/5548996074736" target="_blank"><i class="fab fa-whatsapp"></i>📞 Whatsapp: (48)
-              99607-4736</a></li>
-          <li><a href="mailto:carrohonestoconsultoria@gmail.com"><i class="fas fa-envelope"></i>📧 E-mail:
-              carrohonestoconsultoria@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/ocarrohonesto" target="_blank"><i class="fab fa-instagram"></i>
-              Instagram: ocarrohonesto</a></li>
+        <ul class="list-unstyled">
+          <li><a href="https://wa.me/5548996074736" target="_blank">📞 Whatsapp: (48) 99607-4736</a></li>
+          <li><a href="mailto:carrohonestoconsultoria@gmail.com">📧 E-mail: carrohonestoconsultoria@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/ocarrohonesto" target="_blank">Instagram: ocarrohonesto</a></li>
         </ul>
       </div>
+
       <div class="footer-section">
         <h5>Links úteis</h5>
-        <ul>
+        <ul class="list-unstyled">
           <li><a href="#quemSomos">Quem somos?</a></li>
           <li><a href="#nossosServicos">Nossos serviços</a></li>
           <li><a href="#galeria">Galeria</a></li>
@@ -328,7 +393,8 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+
+    <div class="footer-bottom text-center mt-4">
       <p>&copy; 2024 Carro Honesto Consultoria. Todos os direitos reservados.</p>
     </div>
   </footer>

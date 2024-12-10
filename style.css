@@ -3,67 +3,67 @@
 }
 
 
+/* NAVBAR */
+.navbar{
+    background-color: #c0904d;
+}
+
+
+/* IMAGEM COM BOTÃO */
+
+.foto-perfil {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
 
 
 /* GALERIA */
 
 h4.galeria {
     text-align: center;
+    margin-top: 5%;
+}
 
+.galeria, #galeria, .container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* .carousel-item img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+  } */
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.carousel-indicators button {
+    background-color: #333;
+}
+.carousel-indicators .active {
+    background-color: #007bff;
 }
 
 
 /* DEPOIMENTOS */
 
-.testimonial-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+h4.depoimentos {
     text-align: center;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-10px);
-}
-
-.testimonial-content {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.testimonial-author {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.testimonial-location {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel-item .testimonial-card {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.carousel-inner {
-    text-align: center;
-}
-
-/* Estilo responsivo */
-@media (max-width: 767px) {
-    .carousel-item .testimonial-card {
-        margin-bottom: 20px;
-    }
+    margin-top: 5%;
 }
 
 
@@ -71,6 +71,7 @@ h4.galeria {
 
 h4.formulario {
     text-align: center;
+    margin-top: 5%;
 }
 
 * {
@@ -79,7 +80,6 @@ h4.formulario {
     box-sizing: border-box;
 }
 
-/* Definindo o estilo geral da página */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
@@ -87,7 +87,6 @@ body {
     padding: 20px;
 }
 
-/* Estilo para a seção do formulário */
 .formulario {
     background-color: #fff;
     border-radius: 10px;
@@ -97,13 +96,11 @@ body {
     margin: 0 auto;
 }
 
-/* Título */
 .formulario h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilo dos campos do formulário */
 .mb-3 {
     margin-bottom: 15px;
 }
@@ -124,15 +121,14 @@ body {
 }
 
 .form-control:focus {
-    border-color: #007bff;
+    border-color: #6077c0;
     outline: none;
 }
 
-/* Estilo do botão */
 .btn {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #6077c0;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -142,10 +138,9 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #6077c0;
 }
 
-/* Ajuste de layout para telas menores */
 @media (max-width: 768px) {
     .formulario {
         padding: 20px;
@@ -157,18 +152,9 @@ body {
 
 h4.perguntas {
     text-align: center;
+    margin-top: 5%;
 }
 
-/* Estilizando a seção */
-.perguntas {
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Título da seção */
 .perguntas-titulo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -177,7 +163,6 @@ h4.perguntas {
     margin-bottom: 1.5rem;
 }
 
-/* Estilizando os itens da accordion */
 .accordion-item {
     margin-bottom: 1rem;
     border: 1px solid #ddd;
@@ -185,13 +170,11 @@ h4.perguntas {
     background-color: #fff;
 }
 
-/* Cabeçalho dos itens da accordion */
 .accordion-header {
     padding: 0;
     border-bottom: 1px solid #ddd;
 }
 
-/* Botão do item da accordion */
 .accordion-button {
     padding: 1rem;
     font-size: 1.1rem;
@@ -214,19 +197,16 @@ h4.perguntas {
     background-color: #e6e6e6;
 }
 
-/* Quando o botão estiver colapsado */
 .accordion-button.collapsed {
     background-color: #f7f7f7;
-    color: #0056b3;
+    color: #c0904d;
 }
 
-/* Quando o botão estiver expandido */
 .accordion-button:not(.collapsed) {
-    background-color: #0056b3;
+    background-color: #c0904d;
     color: #fff;
 }
 
-/* Corpo da accordion */
 .accordion-body {
     padding: 1.5rem;
     font-size: 1rem;
@@ -235,7 +215,6 @@ h4.perguntas {
     border-top: 1px solid #ddd;
 }
 
-/* Destaque para o texto forte dentro da accordion */
 .accordion-body strong {
     color: #333;
     font-weight: 700;
@@ -244,8 +223,6 @@ h4.perguntas {
 
 /* RODAPÉ */
 
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -253,8 +230,13 @@ body {
     background-color: #f4f4f4;
 }
 
+img.footer{
+    border-radius: 50%;
+    padding-right: 8%;
+}
+
 footer {
-    background-color: #333;
+    background-color: #455073;
     color: #fff;
     padding: 20px 0;
     font-size: 14px;
