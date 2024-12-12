@@ -17,11 +17,13 @@
 
 <body>
 
-      <!-- Cabeçalho com logo -->
+  <!-- Cabeçalho com logo -->
 
   <header style="background-color: #BCAA8a;">
     <div class="text-center">
-      <img src="https://i.imgur.com/sLn350V.png" width="100px">
+      <a href="https://www.instagram.com/ocarrohonesto" target="_blank" style="text-decoration: none;">
+        <img src="https://i.imgur.com/sLn350V.png" style="width: 100px;" alt="logo Carro Honesto">
+      </a>
     </div>
   </header>
 
@@ -37,42 +39,47 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#quem-somos"> Quem Somos</a>
+              <a class="nav-link" href="#quem-somos"><strong> Quem Somos</strong> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#nossos-servicos"> Nossos Serviços</a>
+              <a class="nav-link" href="#nossos-servicos"><strong> Nossos Serviços</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#galeria"> Carros Avaliados</a>
+              <a class="nav-link" href="#galeria"><strong> Carros Avaliados</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#depoimentos"> Depoimentos de Clientes</a>
+              <a class="nav-link" href="#depoimentos"><strong> Depoimentos de Clientes</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#formulario"> Entre em Contato</a>
+              <a class="nav-link" href="#formulario"><strong> Entre em Contato</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#accordionExample"> Perguntas Frequentes</a>
+              <a class="nav-link" href="#accordionExample"><strong> Perguntas Frequentes</strong></a>
             </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
   </nav>
 
 
   <!-- Imagem com Botão -->
-  <div class="text-center md-4" style="width: 100%; height: 650px; background-size: cover; background-image: url('https://live.staticflickr.com/65535/54196852613_ec95e24f3e_b.jpg'); display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+  <div class="text-center md-4"
+    style="width: 100%; height: 650px; background-size: cover; background-image: url('https://live.staticflickr.com/65535/54196852613_ec95e24f3e_b.jpg'); display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
 
     <button type="button" class="btn btn-primary" style="width: 30%; margin-bottom: 20px; background: #435892">
       <a class="nav-link" href="#forms"> Solicitar Orçamento </a>
     </button>
 
-</div>
+  </div>
 
 
   <!-- QUEM SOMOS -->
 
   <section class="pt-5 pb-5 quemsomos" style="background-color: #BCAA8a;">
-  <div class="position-relative" id="quemSomos"> </div>
+    <div class="position-relative" id="quemSomos"> </div>
     <div class="position-absolute top-20 start-20" id="quem-somos"></div>
-    <h2 class=".bg-primário-sutil" style="margin-right: 10px"> Quem Somos?</h2>
+    <h2 class="quemsomos" style="margin-right: 10px"> Quem Somos?</h2>
     <p>Com mais de 14 anos de experiência com carros, a Carro Honesto oferece aos seus clientes um serviço completo de
       Avaliação e Consultoria Automotiva. Através de técnicas seguras e um método confiável, a empresa garante um
       serviço eficaz, verificando a procedência, histórico e estado geral dos veículos. Com um atendimento
@@ -94,9 +101,9 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title" style="color: #BCAA8a;">Avaliação Pré Compra</h3>
-            <p class="card-text" style="color: #BCAA8a;">Destinada a quem já tem um veículo escolhido.</p>
-            <h5 style="color: #BCAA8a;">Serviços Realizados</h5>
+            <h3 class="card-title" style="color: #455073;">Avaliação Pré Compra</h3>
+            <p class="card-text" style="color: #BCAA8a;">Destinada a quem já tem um veículo escolhido.</p><br>
+            <!-- <h5 style="color: #BCAA8a;">Serviços Realizados</h5> -->
             <ul>
               <li> Inspeção mecânica;</li>
               <li> Inspeção elétrica e eletrônica;</li>
@@ -127,10 +134,11 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title" style="color: #BCAA8a;">Consultoria de Compra</h3>
-            <p class="card-text" style="color: #BCAA8a;">Destinada a quem precisa de um trabalho de busca segura e eficaz para a
+            <h3 class="card-title" style="color: #455073;">Consultoria de Compra</h3>
+            <p class="card-text" style="color: #BCAA8a;">Destinada a quem precisa de um trabalho de busca segura e
+              eficaz para a
               compra de
-              um novo veículo.</p> <br>
+              um novo veículo.</p> <br><br>
             <ul>
               <li> Análise de perfil;</li>
               <li> Definição do modelo de veículo;</li>
@@ -138,6 +146,7 @@
               <li> Negociação de compra;</li>
               <li> Entrega técnica</li>
             </ul>
+            <br><br>
             <a href="https://api.whatsapp.com/send?phone=5548996074736" class="btn btn-primary">Solicitar
               Orçamento</a>
           </div>
@@ -167,7 +176,9 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="https://s3.ecompletocarros.dev/images/lojas/209/veiculos/26368/veiculoInfoVeiculoImagesMobile/vehicle_image_1590778611_8f412ff61e6ca9d8db79f83cdd5cafff.jpeg" class="d-block w-100 " alt="Foto 1">
+            <img
+              src="https://s3.ecompletocarros.dev/images/lojas/209/veiculos/26368/veiculoInfoVeiculoImagesMobile/vehicle_image_1590778611_8f412ff61e6ca9d8db79f83cdd5cafff.jpeg"
+              class="d-block w-100 " alt="Foto 1">
             <div class="carousel-caption">
               <h5>Outlander V6 2016</h5>
               <p>Localizada para cliente de consultoria localizada em Belo Horizonte. Veículo em excelente estado geral.
@@ -182,7 +193,9 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://s3.ecompletocarros.dev/images/lojas/296/veiculos/92827/veiculoInfoVeiculoImagesMobile/vehicle_image_1645809331_cb2b427aef491dad991e3e97d036d326.jpeg" class="d-block w-100" alt="Foto 3">
+            <img
+              src="https://s3.ecompletocarros.dev/images/lojas/296/veiculos/92827/veiculoInfoVeiculoImagesMobile/vehicle_image_1645809331_cb2b427aef491dad991e3e97d036d326.jpeg"
+              class="d-block w-100" alt="Foto 3">
             <div class="carousel-caption">
               <h5>Creta Prestige 2019</h5>
               <p>Localizado para cliente de consultoria em Florianópolis. Veículo em excepcional estado geral e com
@@ -190,7 +203,8 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://autoentusiastas.com.br/ae/wp-content/uploads/2024/05/AE-Jeep-GrandCherokee-4xe-CAPA.jpg" class="d-block w-100" alt="Foto 4">
+            <img src="https://autoentusiastas.com.br/ae/wp-content/uploads/2024/05/AE-Jeep-GrandCherokee-4xe-CAPA.jpg"
+              class="d-block w-100" alt="Foto 4">
             <div class="carousel-caption">
               <h5>Grand Cherokee</h5>
               <p>Após análise técnica minuciosa, descobrimos queo veículo fez uso de GNV e teve manutenção
@@ -205,7 +219,9 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://image1.mobiauto.com.br/images/api/images/v1.0/430309465/transform/fl_progressive,f_webp,q_70,w_600" class="d-block w-100" alt="Foto 6">
+            <img
+              src="https://image1.mobiauto.com.br/images/api/images/v1.0/430309465/transform/fl_progressive,f_webp,q_70,w_600"
+              class="d-block w-100" alt="Foto 6">
             <div class="carousel-caption">
               <h5>Fielder XEI 2007</h5>
               <p>Após análise técnica visual, com o aparelho identificamos presença de massa no pára-lama dianteiro
@@ -219,14 +235,18 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://dsae.s3.amazonaws.com/00434116001968/Fotos/GBC-8235_04.jpg?u=20240906150132&auto=format&ixlib=react-9.8.1&h=700&dpr=2&q=50" class="d-block w-100" alt="Foto 8">
+            <img
+              src="https://dsae.s3.amazonaws.com/00434116001968/Fotos/GBC-8235_04.jpg?u=20240906150132&auto=format&ixlib=react-9.8.1&h=700&dpr=2&q=50"
+              class="d-block w-100" alt="Foto 8">
             <div class="carousel-caption">
               <h5>Jetta Highline 2017</h5>
               <p>Avaliação pré compra para cliente da Bahia. Mais de 400 itens analisados.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://www.berettaautomoveis.com.br/wp-content/uploads/automoveis/automovel-honda-accord-ex-v6-2015-6756.webp" class="d-block w-100" alt="Foto 9">
+            <img
+              src="https://www.berettaautomoveis.com.br/wp-content/uploads/automoveis/automovel-honda-accord-ex-v6-2015-6756.webp"
+              class="d-block w-100" alt="Foto 9">
             <div class="carousel-caption">
               <h5>Accord V6 2015</h5>
               <p>Avaliação pré compra para cliente de Belo Horizonte. Mais de 400 itens analisados.</p>
@@ -360,10 +380,11 @@
       </div>
     </div>
   </section>
-
+  <br><br><br>
 
 
   <footer>
+    <br>
     <div class="footer-container text-center">
       <div class="mb-4">
         <img src="img/logo.jpeg" alt="Logo Carro Honesto Consultoria" class="footer" width="100">
@@ -387,15 +408,17 @@
       </div>
     </div>
 
-    
+
     <div style="width: 100%; text-align: end; padding-right: 70px;">
-        <a href="https://api.whatsapp.com/send/?phone=5548996074736&text&type=phone_number&app_absent=0" target="_blank" style="text-decoration: none;">
-          <img src="img/—Pngtree—white whatsapp icon png_3562063.png" style="width: 80px;" />
-        </a>
-        <a href="https://www.instagram.com/ocarrohonesto" target="_blank" style="text-decoration: none;"> 
-          <img src="—Pngtree—white instagram icon png instagram_3562066.png" style="width: 80px;"/>
-        </a>
-    </div> 
+      <a href="https://api.whatsapp.com/send/?phone=5548996074736&text&type=phone_number&app_absent=0" target="_blank"
+        style="text-decoration: none;">
+        <img src="img/—Pngtree—white whatsapp icon png_3562063.png" style="width: 80px;" alt="icone do whatsapp">
+      </a>
+      <a href="https://www.instagram.com/ocarrohonesto" target="_blank" style="text-decoration: none;">
+        <img src="img/—Pngtree—white instagram icon png instagram_3562066.png" style="width: 80px;"
+          alt="icone do instagram">
+      </a>
+    </div>
 
     <div class="footer-bottom text-center mt-4">
       <p>&copy; 2024 Carro Honesto Consultoria. Todos os direitos reservados.</p>
@@ -403,5 +426,4 @@
   </footer>
 
 </body>
-
 </html>

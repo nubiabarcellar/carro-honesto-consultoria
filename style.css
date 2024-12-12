@@ -1,5 +1,3 @@
-
-
 .logocentralizada {
     text-align: center;
 }
@@ -8,7 +6,12 @@
 /* NAVBAR */
 .navbar{
     background-color: #c0904d;
+    width: 100%;
 }
+nav-item.hover{
+    background-color: #007bff;
+}
+
 
 /* QUEM SOMOS */
 .quemsomos {
@@ -17,6 +20,12 @@
     
 }
 
+h2.quemsomos{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
 /* NOSSOS SERVICOS */
 .nossosservicos {
     color: #BCAA8a ;
@@ -24,6 +33,17 @@
 }
 
 ul{ color: #BCAA8a;}
+
+h2.nossosservicos{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+h3.card-title, p.card-text{
+    text-align: center;
+}
+
+
 
 /* IMAGEM COM BOTÃO */
 
@@ -87,9 +107,10 @@ h2.depoimentos {
 
 /* FORMULARIO */
 
-h2.formulario {
+h4.formulario {
     text-align: center;
     margin-top: 5%;
+    color: #BCAA8a;
 }
 
 * {
