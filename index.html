@@ -17,13 +17,17 @@
 
 <body>
 
-  <header>
+      <!-- Cabeçalho com logo -->
+
+  <header style="background-color: #BCAA8a;">
     <div class="text-center">
-      <img src="img/logo.jpeg" width="100px">
+      <img src="https://i.imgur.com/sLn350V.png" width="100px">
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- Menu Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #f2eee7;">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,22 +58,21 @@
 
 
   <!-- Imagem com Botão -->
+  <div class="text-center md-4" style="width: 100%; height: 650px; background-size: cover; background-image: url('https://live.staticflickr.com/65535/54196852613_ec95e24f3e_b.jpg'); display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
 
-  <div class="text-center md-4" style="position: relative;">
-    <img src="img/perfil.jpeg" class="foto-perfil" width="600px">
-    <button type="button" class="btn btn-primary"
-      style="--bs-btn-padding-y: .65rem; --bs-btn-padding-x: .95rem; --bs-btn-font-size: .75rem; position: absolute; top: 75%; left: 50%; transform: translateX(-50%)">
-      Solicitar Orçamento
+    <button type="button" class="btn btn-primary" style="width: 30%; margin-bottom: 20px; background: #435892">
+      <a class="nav-link" href="#forms"> Solicitar Orçamento </a>
     </button>
-  </div>
+
+</div>
 
 
   <!-- QUEM SOMOS -->
 
-  <section class="mt-5 ms-5 me-5">
-    <div class="position-relative" id="quemSomos"> </div>
+  <section class="pt-5 pb-5 quemsomos" style="background-color: #BCAA8a;">
+  <div class="position-relative" id="quemSomos"> </div>
     <div class="position-absolute top-20 start-20" id="quem-somos"></div>
-    <h2 class=".bg-primário-sutil"> Quem Somos?</h2>
+    <h2 class=".bg-primário-sutil" style="margin-right: 10px"> Quem Somos?</h2>
     <p>Com mais de 14 anos de experiência com carros, a Carro Honesto oferece aos seus clientes um serviço completo de
       Avaliação e Consultoria Automotiva. Através de técnicas seguras e um método confiável, a empresa garante um
       serviço eficaz, verificando a procedência, histórico e estado geral dos veículos. Com um atendimento
@@ -82,8 +85,8 @@
 
   <!-- NOSSOS SERVIÇOS -->
 
-  <section class="mt-5 ms-5 me-5">
-    <h2 class=".bg-primário-sutil " id="nossos-servicos"> Nossos Serviços</h2>
+  <section class="pt-5 pb-3 " style="background-color: #f2eee7;">
+    <h2 class=" nossosservicos " id="nossos-servicos"> Nossos Serviços</h2>
     <div class="card mb-3 mt-4 mx-auto p-2" style="max-width: 800px;" id="nossosServicos">
       <div class="row g-0">
         <div class="col-md-4">
@@ -91,9 +94,9 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title">Avaliação Pré Compra</h3>
-            <p class="card-text">Destinada a quem já tem um veículo escolhido.</p>
-            <h5>Serviços Realizados</h5>
+            <h3 class="card-title" style="color: #BCAA8a;">Avaliação Pré Compra</h3>
+            <p class="card-text" style="color: #BCAA8a;">Destinada a quem já tem um veículo escolhido.</p>
+            <h5 style="color: #BCAA8a;">Serviços Realizados</h5>
             <ul>
               <li> Inspeção mecânica;</li>
               <li> Inspeção elétrica e eletrônica;</li>
@@ -116,16 +119,16 @@
     </div>
   </section>
 
-  <section>
-    <div class="card mb-3 mt-4 mx-auto p-2" style="max-width: 800px;">
+  <section style="background-color: #f2eee7;">
+    <div class="card mb-3 mt-4 mx-auto p-2 pb-4" style="max-width: 800px;">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="img/servicos2.jpeg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h3 class="card-title">Consultoria de Compra</h3>
-            <p class="card-text">Destinada a quem precisa de um trabalho de busca segura e eficaz para a
+            <h3 class="card-title" style="color: #BCAA8a;">Consultoria de Compra</h3>
+            <p class="card-text" style="color: #BCAA8a;">Destinada a quem precisa de um trabalho de busca segura e eficaz para a
               compra de
               um novo veículo.</p> <br>
             <ul>
@@ -146,7 +149,7 @@
   <!-- Carrossel de fotos automático com implemento de botões indicadores, com intervalo automático estilizado e legendas -->
 
   <section class="galeria">
-    <h4 class="galeria">VEJA ALGUNS DE NOSSOS TRABALHOS</h4>
+    <h2 class="galeria" style="color: #BCAA8a;">Veja Alguns de Nossos Trabalhos</h2>
     <div class="container mt-5" id="galeria">
       <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -164,7 +167,7 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="img/consultoria1-.jpeg" class="d-block w-100" alt="Foto 1">
+            <img src="https://s3.ecompletocarros.dev/images/lojas/209/veiculos/26368/veiculoInfoVeiculoImagesMobile/vehicle_image_1590778611_8f412ff61e6ca9d8db79f83cdd5cafff.jpeg" class="d-block w-100 " alt="Foto 1">
             <div class="carousel-caption">
               <h5>Outlander V6 2016</h5>
               <p>Localizada para cliente de consultoria localizada em Belo Horizonte. Veículo em excelente estado geral.
@@ -179,7 +182,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/consultoria2-.jpeg" class="d-block w-100" alt="Foto 3">
+            <img src="https://s3.ecompletocarros.dev/images/lojas/296/veiculos/92827/veiculoInfoVeiculoImagesMobile/vehicle_image_1645809331_cb2b427aef491dad991e3e97d036d326.jpeg" class="d-block w-100" alt="Foto 3">
             <div class="carousel-caption">
               <h5>Creta Prestige 2019</h5>
               <p>Localizado para cliente de consultoria em Florianópolis. Veículo em excepcional estado geral e com
@@ -187,7 +190,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/avaliacao7-.jpeg" class="d-block w-100" alt="Foto 4">
+            <img src="https://autoentusiastas.com.br/ae/wp-content/uploads/2024/05/AE-Jeep-GrandCherokee-4xe-CAPA.jpg" class="d-block w-100" alt="Foto 4">
             <div class="carousel-caption">
               <h5>Grand Cherokee</h5>
               <p>Após análise técnica minuciosa, descobrimos queo veículo fez uso de GNV e teve manutenção
@@ -202,7 +205,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/avaliacao2-.jpeg" class="d-block w-100" alt="Foto 6">
+            <img src="https://image1.mobiauto.com.br/images/api/images/v1.0/430309465/transform/fl_progressive,f_webp,q_70,w_600" class="d-block w-100" alt="Foto 6">
             <div class="carousel-caption">
               <h5>Fielder XEI 2007</h5>
               <p>Após análise técnica visual, com o aparelho identificamos presença de massa no pára-lama dianteiro
@@ -216,14 +219,14 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/avaliacao4-.jpeg" class="d-block w-100" alt="Foto 8">
+            <img src="https://dsae.s3.amazonaws.com/00434116001968/Fotos/GBC-8235_04.jpg?u=20240906150132&auto=format&ixlib=react-9.8.1&h=700&dpr=2&q=50" class="d-block w-100" alt="Foto 8">
             <div class="carousel-caption">
               <h5>Jetta Highline 2017</h5>
               <p>Avaliação pré compra para cliente da Bahia. Mais de 400 itens analisados.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="img/avaliacao5-.jpeg" class="d-block w-100" alt="Foto 9">
+            <img src="https://www.berettaautomoveis.com.br/wp-content/uploads/automoveis/automovel-honda-accord-ex-v6-2015-6756.webp" class="d-block w-100" alt="Foto 9">
             <div class="carousel-caption">
               <h5>Accord V6 2015</h5>
               <p>Avaliação pré compra para cliente de Belo Horizonte. Mais de 400 itens analisados.</p>
@@ -247,7 +250,7 @@
   <!-- DEPOIMENTOS -->
 
   <section class="depoimentos" id="depoimentos">
-    <h4 class="depoimentos">DEPOIMENTOS</h4>
+    <h2 class="depoimentos" style="color: #435892;">Depoimentos</h2>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <div class="elfsight-app-79e2a086-70a1-4894-99cb-2a17ba8986b0" data-elfsight-app-lazy></div>
   </section>
@@ -255,40 +258,42 @@
 
   <!-- FORMULÁRIO -->
 
-  <section class="formulario">
-    <h4 class="formulario">ENTRE EM CONTATO</h4>
-    <form>
-      <div class="mb-3" id="formulario">
-        <label for="name" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
-      </div>
-      <div class="mb-3">
-        <label for="tel" class="form-label">Celular - Whatsapp</label>
-        <input type="tel" class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}"
-          required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
-      </div>
-      <div class="mb-3">
-        <label for="city" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="city" placeholder="Digite sua cidade e estado" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Digite aqui sua mensagem honesta"
-          required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-  </section>
+  <div style="width: 100%; background-color: #435892;" class="pt-4 pb-4">
+    <section id="forms" class="formulario">
+      <h4 class="formulario">Fale Conosco</h4>
+      <form>
+        <div class="mb-3" id="formulario">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="tel" class="form-label">Celular - Whatsapp</label>
+          <input type="tel" class="form-control" id="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\) \d{5}-\d{4}"
+            required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="city" placeholder="Digite sua cidade e estado" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Digite aqui sua mensagem honesta"
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </div>
 
 
   <!-- PERGUNTAS FREQUENTES -->
 
   <section class="perguntas">
-    <h4 class="perguntas">PERGUNTAS FREQUENTES</h4>
+    <h2 class="perguntas">Perguntas Frequentes</h2>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -357,7 +362,6 @@
   </section>
 
 
-  <!-- RODAPÉ -->
 
   <footer>
     <div class="footer-container text-center">
@@ -370,17 +374,9 @@
         <p>O carro que você precisa com a transparência que você procura.</p>
       </div>
 
-      <div class="footer-section">
-        <h5>Contatos e Redes Sociais</h5>
-        <ul class="list-unstyled">
-          <li><a href="https://wa.me/5548996074736" target="_blank">📞 Whatsapp: (48) 99607-4736</a></li>
-          <li><a href="mailto:carrohonestoconsultoria@gmail.com">📧 E-mail: carrohonestoconsultoria@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/ocarrohonesto" target="_blank">Instagram: ocarrohonesto</a></li>
-        </ul>
-      </div>
 
-      <div class="footer-section">
-        <h5>Links úteis</h5>
+      <div class="footer-section" style="text-align: left;">
+        <h5>Menu</h5>
         <ul class="list-unstyled">
           <li><a href="#quemSomos">Quem somos?</a></li>
           <li><a href="#nossosServicos">Nossos serviços</a></li>
@@ -390,6 +386,16 @@
         </ul>
       </div>
     </div>
+
+    
+    <div style="width: 100%; text-align: end; padding-right: 70px;">
+        <a href="https://api.whatsapp.com/send/?phone=5548996074736&text&type=phone_number&app_absent=0" target="_blank" style="text-decoration: none;">
+          <img src="img/—Pngtree—white whatsapp icon png_3562063.png" style="width: 80px;" />
+        </a>
+        <a href="https://www.instagram.com/ocarrohonesto" target="_blank" style="text-decoration: none;"> 
+          <img src="img/—Pngtree—white instagram icon png instagram_3562066.png" style="width: 80px;"/>
+        </a>
+    </div> 
 
     <div class="footer-bottom text-center mt-4">
       <p>&copy; 2024 Carro Honesto Consultoria. Todos os direitos reservados.</p>

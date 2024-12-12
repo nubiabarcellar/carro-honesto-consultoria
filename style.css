@@ -1,3 +1,5 @@
+
+
 .logocentralizada {
     text-align: center;
 }
@@ -8,6 +10,20 @@
     background-color: #c0904d;
 }
 
+/* QUEM SOMOS */
+.quemsomos {
+    color:white ;
+    padding-left: 5%;
+    
+}
+
+/* NOSSOS SERVICOS */
+.nossosservicos {
+    color: #BCAA8a ;
+    padding-left: 5%;
+}
+
+ul{ color: #BCAA8a;}
 
 /* IMAGEM COM BOTÃO */
 
@@ -23,9 +39,10 @@
 
 /* GALERIA */
 
-h4.galeria {
+h2.galeria {
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .galeria, #galeria, .container {
@@ -42,7 +59,7 @@ h4.galeria {
   } */
 
 .carousel-item img {
-    height: 1000px;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -61,15 +78,16 @@ h4.galeria {
 
 /* DEPOIMENTOS */
 
-h4.depoimentos {
+h2.depoimentos {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 
 /* FORMULARIO */
 
-h4.formulario {
+h2.formulario {
     text-align: center;
     margin-top: 5%;
 }
@@ -81,14 +99,14 @@ h4.formulario {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family:  sans-serif;
+    background-color: #f2eee7 !important;
     color: #333;
     padding: 20px;
 }
 
 .formulario {
-    background-color: #fff;
+    background-color: #f2eee7;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -150,9 +168,11 @@ body {
 
 /* PERGUNTAS FREQUENTES */
 
-h4.perguntas {
+h2.perguntas {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color:  #c0904d;
 }
 
 .perguntas-titulo {
@@ -218,13 +238,14 @@ h4.perguntas {
 .accordion-body strong {
     color: #333;
     font-weight: 700;
+    margin-bottom: 4%;
 }
 
 
 /* RODAPÉ */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -232,7 +253,7 @@ body {
 
 img.footer{
     border-radius: 50%;
-    padding-right: 8%;
+    padding-left: 15%;
 }
 
 footer {
@@ -241,6 +262,13 @@ footer {
     padding: 20px 0;
     font-size: 14px;
 }
+
+.social-icons {
+    position: absolute; /* Remove from normal flow */
+    right: 0; /* Position to the right edge */
+    top: 50%; /* Center vertically (adjust as needed) */
+    transform: translateY(-50%); /* Offset to counteract vertical centering */
+  }
 
 .footer-container {
     display: flex;
